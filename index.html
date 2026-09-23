@@ -317,25 +317,32 @@
         }
 
         /* Responsive Styles */
-        @media (max-width: 640px) {
-            header {
-                padding-top: 1rem;
-            }
-
-            .brand-logo {
-                max-height: 36px;
-            }
-
-            .feed-item {
-                padding: 1.4rem;
-            }
-
-            footer {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 1rem;
-            }
-        }
+		@media (max-width: 640px) {
+	    header {
+	        padding-top: 1rem;
+	    }
+	
+	    .brand-logo-link {
+	        display: block;
+	        width: 100%;
+	    }
+	
+	    .brand-logo {
+	        width: 100%;
+	        max-height: none; /* Removes the 36px height limit */
+	        height: auto;
+	    }
+	
+	    .feed-item {
+	        padding: 1.4rem;
+	    }
+	
+	    footer {
+	        flex-direction: column;
+	        align-items: flex-start;
+	        gap: 1rem;
+	    }
+	}
     </style>
 </head>
 <body>
