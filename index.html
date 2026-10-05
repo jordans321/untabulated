@@ -6,56 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <!-- Primary SEO Meta Tags -->
-    <title>Untabulated</title>
+    <title>Untabulated with XX</title>
     <meta name="title" content="Untabulated">
-    <meta name="description" content="Untabulated is an independent media platform exploring ideas, research, and insights beyond the boundaries of traditional media through written articles, podcasts, and video essays.">
-    <meta name="keywords" content="untabulated, media, knowledge, essay, technology, culture, research, articles, video essays">
+    <meta name="description" content="Untabulated is an independent media platform exploring ideas, research, and insights beyond the boundaries of traditional media and academic research through written articles, podcasts, and video essays.">
+    <meta name="keywords" content="untabulated, media, knowledge, essay, technology, culture, research, articles, video essays, scandinavian">
     <meta name="author" content="Untabulated">
     <meta name="robots" content="index, follow">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://untabulated.com/">
-    <meta property="og:title" content="Untabulated">
-    <meta property="og:description" content="Conversations you want to hear.">
+    <meta property="og:title" content="Untabulated with XX">
+    <meta property="og:description" content="Untabulated is an independent media platform exploring ideas, research, and insights beyond the boundaries of traditional media and academic research through written articles, podcasts, and video essays.">
+    <meta property="og:image" content="https://untabulated.com/logo2.png">
 
     <!-- Twitter Card -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://untabulated.com/">
     <meta property="twitter:title" content="Untabulated">
-    <meta property="twitter:description" content="Conversations you want to hear.">
+    <meta property="twitter:description" content="Untabulated is an independent media platform exploring ideas, research, and insights beyond the boundaries of traditional media and academic research through written articles, podcasts, and video essays.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
     <style>
         /* ==========================================================================
-           Color Palette: White Background, Dark Blue, Off-Black, Slate & Grays
+           Color Palette: Pure Black background, Whites, Muted Grays
            ========================================================================== */
 
         :root {
-            --bg-color: #ffffff;
-            --bg-card: #f9fafb;
-            --bg-card-hover: #f3f4f6;
-            --border-color: #e5e7eb;
-            --border-hover: #d1d5db;
+            --bg-color: #000000;
+            --bg-card: #0a0a0a;
+            --bg-card-hover: #121212;
+            --border-color: #1f1f1f;
+            --border-hover: #3a3a3a;
             
-            --text-primary: #111827;
-            --text-secondary: #4b5563;
-            --text-muted: #6b7280;
-            
-            /* Dark Blue Accents */
-            --navy-primary: #0a2540;
-            --navy-hover: #003366;
-            --navy-light: #eff6ff;
-            --navy-border: #bfdbfe;
+            --text-primary: #ffffff;
+            --text-secondary: #c0c0c0;
+            --text-muted: #666666;
             
             --font-main: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-            --font-brand: 'Montserrat', 'Futura', 'Avenir', sans-serif;
-            
             --max-width: 900px;
             --transition-smooth: cubic-bezier(0.16, 1, 0.3, 1);
         }
@@ -84,7 +77,6 @@
             flex-direction: column;
             justify-content: space-between;
             padding: 0 1.5rem;
-            background-color: var(--bg-color);
         }
 
         /* Layout Container */
@@ -96,20 +88,18 @@
 
         /* Header */
         header {
-            padding-top: 2rem;
-            margin-bottom: 2.5rem;
+            padding-top: 1.5rem;
         }
 
         .top-nav {
-            padding-bottom: 0.75rem;
-            margin-bottom: 1.5rem;
-            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.0rem;
         }
 
         .nav-links {
             display: flex;
             flex-wrap: wrap;
-            gap: 1.75rem;
+            gap: 1.5rem;
             list-style: none;
             justify-content: flex-start;
         }
@@ -118,84 +108,61 @@
             color: var(--text-secondary);
             text-decoration: none;
             font-size: 0.85rem;
-            font-weight: 500;
-            letter-spacing: 0.04em;
+            font-weight: 400;
+            letter-spacing: 0.02em;
             text-transform: lowercase;
             transition: color 0.2s ease, border-color 0.2s ease;
-            border-bottom: 2px solid transparent;
-            padding-bottom: 4px;
+            border-bottom: 1px solid transparent;
+            padding-bottom: 2px;
         }
 
         .nav-links a:hover {
-            color: var(--navy-primary);
-            border-color: var(--navy-primary);
+            color: var(--text-primary);
+            border-color: var(--text-primary);
         }
 
-        /* Brand Text Header (Futura-style Geometric Sans) */
+        /* Brand Logo */
         .brand-section {
-            margin-bottom: 1.25rem;
+            margin-bottom: 1.0rem;
         }
 
-        .brand-logo-text {
-            font-family: var(--font-brand);
-            font-size: clamp(2rem, 5vw, 3.2rem);
-            font-weight: 800;
-            letter-spacing: -0.03em;
-            text-transform: uppercase;
-            color: var(--navy-primary);
+        .brand-logo-link {
+            display: inline-block;
             text-decoration: none;
-            display: inline-block;
-            line-height: 1.1;
-            transition: color 0.2s ease;
+            transition: opacity 0.2s ease;
         }
 
-        .brand-logo-text:hover {
-            color: var(--navy-hover);
+        .brand-logo-link:hover {
+            opacity: 0.85;
         }
 
-        /* Dictionary Style Definition Block */
-        .dictionary-definition {
-            padding: 1.25rem 1.5rem;
-            background-color: var(--bg-card);
-            border-left: 3px solid var(--navy-primary);
-            border-radius: 0 8px 8px 0;
-            margin-top: 0.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .dict-headword {
-            font-family: var(--font-brand);
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            letter-spacing: -0.01em;
-            display: inline-block;
-            margin-right: 0.5rem;
-        }
-
-        .dict-phonetic {
-            font-family: var(--font-main);
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            font-weight: 400;
-            margin-right: 0.75rem;
-        }
-
-        .dict-pos {
-            font-style: italic;
-            font-size: 0.9rem;
-            color: var(--navy-primary);
-            font-weight: 500;
-            margin-right: 0.75rem;
-        }
-
-        .dict-meaning {
+        .brand-logo {
             display: block;
-            margin-top: 0.35rem;
+            max-width: 100%;
+            height: auto;
+            max-height: 110px;
+            object-fit: contain;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Hero / Site Description Sub-Header */
+        .site-description {
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .site-description p {
+            color: var(--text-secondary);
             font-size: 1.05rem;
+            font-weight: 300;
+            line-height: 1.5;
+            max-width: 650px;
+        }
+
+        .site-description strong {
             color: var(--text-primary);
-            font-weight: 400;
-            line-height: 1.4;
+            font-weight: 500;
         }
 
         /* Content Feed & Cards */
@@ -203,7 +170,7 @@
             display: flex;
             flex-direction: column;
             gap: 2rem;
-            margin-bottom: 2.5rem;
+            margin-bottom: 1.5rem;
         }
 
         .feed-item {
@@ -211,51 +178,47 @@
             border: 1px solid var(--border-color);
             border-radius: 12px;
             padding: 2rem;
-            transition: transform 0.3s var(--transition-smooth), border-color 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s var(--transition-smooth), border-color 0.3s ease, background-color 0.3s ease;
             position: relative;
             overflow: hidden;
         }
 
         .feed-item:hover {
-            border-color: var(--navy-border);
+            border-color: var(--border-hover);
             background-color: var(--bg-card-hover);
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px -5px rgba(10, 37, 64, 0.05);
         }
 
         .entry-meta {
             display: flex;
             align-items: center;
-            gap: 0.85rem;
+            gap: 1rem;
             font-size: 0.78rem;
             color: var(--text-muted);
             margin-bottom: 0.8rem;
             text-transform: uppercase;
             letter-spacing: 0.06em;
-            flex-wrap: wrap;
         }
 
         .entry-badge {
             display: inline-flex;
             align-items: center;
             gap: 0.4rem;
-            background: var(--navy-light);
-            color: var(--navy-primary);
-            border: 1px solid var(--navy-border);
-            padding: 0.2rem 0.65rem;
+            background: rgba(255, 255, 255, 0.06);
+            color: var(--text-secondary);
+            padding: 0.2rem 0.6rem;
             border-radius: 4px;
             font-size: 0.75rem;
-            font-weight: 600;
-            letter-spacing: 0.03em;
+            font-weight: 500;
         }
 
         .entry-title {
             font-family: var(--font-heading);
             font-size: clamp(1.3rem, 2.5vw, 1.7rem);
-            font-weight: 700;
+            font-weight: 500;
             line-height: 1.3;
             letter-spacing: -0.01em;
-            margin-bottom: 0.75rem;
+            margin-bottom: 0.7rem;
             color: var(--text-primary);
         }
 
@@ -266,15 +229,15 @@
         }
 
         .entry-title a:hover {
-            color: var(--navy-primary);
+            color: var(--text-secondary);
         }
 
         .entry-excerpt {
             color: var(--text-secondary);
             font-size: 0.98rem;
-            font-weight: 400;
+            font-weight: 300;
             line-height: 1.6;
-            margin-bottom: 1.25rem;
+            margin-bottom: 1.2rem;
         }
 
         .video-container {
@@ -302,16 +265,15 @@
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            color: var(--navy-primary);
+            color: var(--text-primary);
             text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 600;
-            transition: gap 0.2s ease, color 0.2s ease;
+            font-size: 0.88rem;
+            font-weight: 500;
+            transition: gap 0.2s ease;
         }
 
         .read-more:hover {
             gap: 0.75rem;
-            color: var(--navy-hover);
         }
 
         .read-more svg {
@@ -322,53 +284,52 @@
 
         /* Footer */
         footer {
-            padding: 1.5rem 0 2.5rem 0;
+            padding: 1rem 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
             gap: 1.5rem;
-            border-top: 1px solid var(--border-color);
             color: var(--text-muted);
             font-size: 0.85rem;
         }
 
         .back-to-top {
-            color: var(--navy-primary);
+            color: var(--text-secondary);
             text-decoration: none;
-            font-weight: 500;
             cursor: pointer;
             transition: color 0.2s ease;
         }
 
         .back-to-top:hover {
-            color: var(--navy-hover);
-            text-decoration: underline;
+            color: var(--text-primary);
         }
 
-        /* Responsive Adjustments */
+        /* Responsive Styles */
         @media (max-width: 640px) {
             header {
-                padding-top: 1.25rem;
-                margin-bottom: 1.75rem;
+                padding-top: 1rem;
             }
 
-            .brand-logo-text {
-                font-size: 2.1rem;
+            .brand-logo-link {
+                display: block;
+                width: 100%;
             }
 
-            .dictionary-definition {
-                padding: 1rem 1.15rem;
+            .brand-logo {
+                width: 100%;
+                max-height: none;
+                height: auto;
             }
 
             .feed-item {
-                padding: 1.25rem;
+                padding: 1.4rem;
             }
 
             footer {
                 flex-direction: column;
                 align-items: flex-start;
-                gap: 0.75rem;
+                gap: 1rem;
             }
         }
     </style>
@@ -378,7 +339,7 @@
     <div class="container">
         <!-- Header Section -->
         <header>
-            <!-- Top Navigation -->
+            <!-- Top Utility Navigation -->
             <nav class="top-nav">
                 <ul class="nav-links">
                     <li><a href="https://youtube.com" target="_blank" rel="noopener">youtube</a></li>
@@ -387,19 +348,16 @@
                 </ul>
             </nav>
 
-            <!-- Brand Section with Futura-Style Text Heading -->
+            <!-- Brand Logo & Subtitle -->
             <div class="brand-section">
-                <a href="#" class="brand-logo-text">UNTABULATED</a>
+                <a href="#" class="brand-logo-link">
+                    <img src="logo.png" alt="Untabulated" class="brand-logo">
+                </a>
             </div>
 
-            <!-- Dictionary Style Sub-Header Definition -->
-            <div class="dictionary-definition">
-                <div>
-                    <span class="dict-headword">un·tab·u·lat·ed</span>
-                    <span class="dict-phonetic">/ˌənˈtabyəˌlādəd/</span>
-                    <span class="dict-pos">noun</span>
-                </div>
-                <span class="dict-meaning">"conversations you want to hear."</span>
+            <!-- Site Mission Statement / Intro Banner -->
+            <div class="site-description">
+                <p><strong>Untabulated</strong>'s goal is to have interesting conversations.</p>
             </div>
         </header>
 
@@ -521,6 +479,7 @@
         </footer>
     </div>
 
+    <!-- Interactive Script -->
     <script>
         function toggleModal(type) {
             if (type === 'about') {
