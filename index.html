@@ -6,49 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <!-- Primary SEO Meta Tags -->
-    <title>Untabulated with XX</title>
-    <meta name="title" content="Untabulated">
-    <meta name="description" content="Untabulated is an independent media platform exploring ideas, research, and insights beyond the boundaries of traditional media and academic research through written articles, podcasts, and video essays.">
-    <meta name="keywords" content="untabulated, media, knowledge, essay, technology, culture, research, articles, video essays, scandinavian">
-    <meta name="author" content="Untabulated">
+    <title>untabulated | with Jordan Schoenfeld, Ohio State professor</title>
+    <meta name="title" content="untabulated">
+    <meta name="description" content="untabulated is an independent media platform exploring ideas, research, and insights through written articles, podcasts, and video essays.">
+    <meta name="keywords" content="untabulated, media, knowledge, essay, technology, culture, research, articles, video essays">
+    <meta name="author" content="Jordan Schoenfeld">
     <meta name="robots" content="index, follow">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://untabulated.com/">
-    <meta property="og:title" content="Untabulated with XX">
-    <meta property="og:description" content="Untabulated is an independent media platform exploring ideas, research, and insights beyond the boundaries of traditional media and academic research through written articles, podcasts, and video essays.">
-    <meta property="og:image" content="https://untabulated.com/logo2.png">
+    <meta property="og:title" content="untabulated | with Jordan Schoenfeld, Ohio State professor">
+    <meta property="og:description" content="conversations you want to hear.">
 
     <!-- Twitter Card -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://untabulated.com/">
-    <meta property="twitter:title" content="Untabulated">
-    <meta property="twitter:description" content="Untabulated is an independent media platform exploring ideas, research, and insights beyond the boundaries of traditional media and academic research through written articles, podcasts, and video essays.">
-    <meta property="twitter:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80">
+    <meta property="twitter:title" content="untabulated">
+    <meta property="twitter:description" content="conversations you want to hear.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+    
     <style>
         /* ==========================================================================
-           Color Palette: Pure Black background, Whites, Muted Grays
+           Color Palette: Pure White, Dark Blue Text Accents, Grayscale Borders & Cards
            ========================================================================== */
 
         :root {
-            --bg-color: #000000;
-            --bg-card: #0a0a0a;
-            --bg-card-hover: #121212;
-            --border-color: #1f1f1f;
-            --border-hover: #3a3a3a;
+            --bg-color: #ffffff;
+            --bg-card: #f9fafb;
+            --bg-card-hover: #f3f4f6;
             
-            --text-primary: #ffffff;
-            --text-secondary: #c0c0c0;
-            --text-muted: #666666;
+            /* Pure Greys for Borders */
+            --border-color: #e5e7eb;
+            --border-hover: #9ca3af;
+            
+            /* Text Colors */
+            --text-primary: #111827;
+            --text-secondary: #4b5563;
+            --text-muted: #6b7280;
+            
+            /* Dark Blue Accents (Text / Badges Only) */
+            --navy-primary: #0a2540;
+            --navy-hover: #003366;
+            --navy-light: #f0f4f8;
             
             --font-main: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-brand: 'Montserrat', 'Futura', 'Avenir', sans-serif;
+            
             --max-width: 900px;
             --transition-smooth: cubic-bezier(0.16, 1, 0.3, 1);
         }
@@ -66,7 +75,7 @@
             color: var(--text-primary);
             font-family: var(--font-main);
             font-size: 16px;
-            line-height: 1.6;
+            line-height: 1.5;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
@@ -76,7 +85,8 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding: 0 1.5rem;
+            padding: 0 1.25rem;
+            background-color: var(--bg-color);
         }
 
         /* Layout Container */
@@ -88,18 +98,18 @@
 
         /* Header */
         header {
-            padding-top: 1.5rem;
+            padding-top: 1rem;
+            margin-bottom: 1.25rem;
         }
 
         .top-nav {
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.0rem;
+            margin-bottom: 0.75rem;
         }
 
         .nav-links {
             display: flex;
             flex-wrap: wrap;
-            gap: 1.5rem;
+            gap: 1.25rem;
             list-style: none;
             justify-content: flex-start;
         }
@@ -108,77 +118,102 @@
             color: var(--text-secondary);
             text-decoration: none;
             font-size: 0.85rem;
-            font-weight: 400;
+            font-weight: 500;
             letter-spacing: 0.02em;
             text-transform: lowercase;
-            transition: color 0.2s ease, border-color 0.2s ease;
-            border-bottom: 1px solid transparent;
+            transition: color 0.2s ease;
             padding-bottom: 2px;
         }
 
         .nav-links a:hover {
-            color: var(--text-primary);
-            border-color: var(--text-primary);
+            color: var(--navy-primary);
         }
 
-        /* Brand Logo */
-        .brand-section {
-            margin-bottom: 1.0rem;
+        /* Seamless Header Block */
+        .brand-block {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
         }
 
-        .brand-logo-link {
-            display: inline-block;
+        .title-line {
+            display: flex;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 0.5rem 0.75rem;
+        }
+
+        .brand-logo-text {
+            font-family: var(--font-brand);
+            font-size: clamp(1.8rem, 4vw, 2.6rem);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            text-transform: lowercase;
+            color: var(--navy-primary);
             text-decoration: none;
-            transition: opacity 0.2s ease;
+            line-height: 1.1;
+            transition: color 0.2s ease;
         }
 
-        .brand-logo-link:hover {
-            opacity: 0.85;
+        .brand-logo-text:hover {
+            color: var(--navy-hover);
         }
 
-        .brand-logo {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            max-height: 110px;
-            object-fit: contain;
-            margin-bottom: 0.5rem;
-        }
-
-        /* Hero / Site Description Sub-Header */
-        .site-description {
-            margin-bottom: 2.5rem;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .site-description p {
-            color: var(--text-secondary);
-            font-size: 1.05rem;
+        .pipe-separator {
+            color: var(--border-hover);
             font-weight: 300;
-            line-height: 1.5;
-            max-width: 650px;
+            font-size: 1.4rem;
+            user-select: none;
         }
 
-        .site-description strong {
-            color: var(--text-primary);
+        .subtitle-text {
+            font-family: var(--font-main);
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        /* Integrated Dictionary Flow */
+        .dictionary-entry {
+            display: flex;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 0.4rem 0.6rem;
+            margin-top: 0.15rem;
+            font-size: 0.95rem;
+        }
+
+        .dict-phonetic {
+            font-family: var(--font-main);
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+
+        .dict-pos {
+            font-style: italic;
+            color: var(--navy-primary);
             font-weight: 500;
+        }
+
+        .dict-meaning {
+            color: var(--text-primary);
+            font-weight: 400;
         }
 
         /* Content Feed & Cards */
         .content-feed {
             display: flex;
             flex-direction: column;
-            gap: 2rem;
+            gap: 1.25rem;
             margin-bottom: 1.5rem;
         }
 
         .feed-item {
             background-color: var(--bg-card);
             border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 2rem;
-            transition: transform 0.3s var(--transition-smooth), border-color 0.3s ease, background-color 0.3s ease;
+            border-radius: 10px;
+            padding: 1.25rem 1.5rem;
+            transition: transform 0.2s var(--transition-smooth), border-color 0.2s ease, background-color 0.2s ease;
             position: relative;
             overflow: hidden;
         }
@@ -186,39 +221,41 @@
         .feed-item:hover {
             border-color: var(--border-hover);
             background-color: var(--bg-card-hover);
-            transform: translateY(-2px);
+            transform: translateY(-1px);
         }
 
         .entry-meta {
             display: flex;
             align-items: center;
-            gap: 1rem;
-            font-size: 0.78rem;
+            gap: 0.6rem;
+            font-size: 0.75rem;
             color: var(--text-muted);
-            margin-bottom: 0.8rem;
+            margin-bottom: 0.4rem;
             text-transform: uppercase;
-            letter-spacing: 0.06em;
+            letter-spacing: 0.05em;
+            flex-wrap: wrap;
         }
 
         .entry-badge {
             display: inline-flex;
             align-items: center;
-            gap: 0.4rem;
-            background: rgba(255, 255, 255, 0.06);
-            color: var(--text-secondary);
-            padding: 0.2rem 0.6rem;
+            gap: 0.35rem;
+            background: var(--navy-light);
+            color: var(--navy-primary);
+            padding: 0.15rem 0.5rem;
             border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: 500;
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
         }
 
         .entry-title {
             font-family: var(--font-heading);
-            font-size: clamp(1.3rem, 2.5vw, 1.7rem);
-            font-weight: 500;
-            line-height: 1.3;
+            font-size: clamp(1.2rem, 2.2vw, 1.5rem);
+            font-weight: 700;
+            line-height: 1.25;
             letter-spacing: -0.01em;
-            margin-bottom: 0.7rem;
+            margin-bottom: 0.4rem;
             color: var(--text-primary);
         }
 
@@ -229,15 +266,15 @@
         }
 
         .entry-title a:hover {
-            color: var(--text-secondary);
+            color: var(--navy-primary);
         }
 
         .entry-excerpt {
             color: var(--text-secondary);
-            font-size: 0.98rem;
-            font-weight: 300;
-            line-height: 1.6;
-            margin-bottom: 1.2rem;
+            font-size: 0.92rem;
+            font-weight: 400;
+            line-height: 1.5;
+            margin-bottom: 0.6rem;
         }
 
         .video-container {
@@ -245,10 +282,10 @@
             width: 100%;
             padding-bottom: 56.25%;
             height: 0;
-            border-radius: 8px;
+            border-radius: 6px;
             overflow: hidden;
             background-color: #000;
-            margin-top: 1rem;
+            margin-top: 0.75rem;
             border: 1px solid var(--border-color);
         }
 
@@ -264,72 +301,78 @@
         .read-more {
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
-            color: var(--text-primary);
+            gap: 0.4rem;
+            color: var(--navy-primary);
             text-decoration: none;
-            font-size: 0.88rem;
-            font-weight: 500;
-            transition: gap 0.2s ease;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: gap 0.2s ease, color 0.2s ease;
         }
 
         .read-more:hover {
-            gap: 0.75rem;
+            gap: 0.65rem;
+            color: var(--navy-hover);
         }
 
         .read-more svg {
-            width: 15px;
-            height: 15px;
+            width: 14px;
+            height: 14px;
             fill: currentColor;
         }
 
         /* Footer */
         footer {
-            padding: 1rem 0;
+            padding: 1rem 0 1.5rem 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            gap: 1.5rem;
+            gap: 0.75rem;
             color: var(--text-muted);
-            font-size: 0.85rem;
+            font-size: 0.82rem;
         }
 
         .back-to-top {
-            color: var(--text-secondary);
+            color: var(--navy-primary);
             text-decoration: none;
+            font-weight: 500;
             cursor: pointer;
             transition: color 0.2s ease;
         }
 
         .back-to-top:hover {
-            color: var(--text-primary);
+            color: var(--navy-hover);
+            text-decoration: underline;
         }
 
-        /* Responsive Styles */
+        /* Responsive Adjustments */
         @media (max-width: 640px) {
             header {
-                padding-top: 1rem;
+                padding-top: 0.75rem;
+                margin-bottom: 1rem;
             }
 
-            .brand-logo-link {
+            .brand-logo-text {
+                font-size: 1.9rem;
+            }
+
+            .pipe-separator {
+                display: none;
+            }
+
+            .subtitle-text {
                 display: block;
                 width: 100%;
             }
 
-            .brand-logo {
-                width: 100%;
-                max-height: none;
-                height: auto;
-            }
-
             .feed-item {
-                padding: 1.4rem;
+                padding: 1rem;
             }
 
             footer {
                 flex-direction: column;
                 align-items: flex-start;
-                gap: 1rem;
+                gap: 0.5rem;
             }
         }
     </style>
@@ -339,7 +382,7 @@
     <div class="container">
         <!-- Header Section -->
         <header>
-            <!-- Top Utility Navigation -->
+            <!-- Top Navigation -->
             <nav class="top-nav">
                 <ul class="nav-links">
                     <li><a href="https://youtube.com" target="_blank" rel="noopener">youtube</a></li>
@@ -348,16 +391,19 @@
                 </ul>
             </nav>
 
-            <!-- Brand Logo & Subtitle -->
-            <div class="brand-section">
-                <a href="#" class="brand-logo-link">
-                    <img src="logo.png" alt="Untabulated" class="brand-logo">
-                </a>
-            </div>
-
-            <!-- Site Mission Statement / Intro Banner -->
-            <div class="site-description">
-                <p><strong>Untabulated</strong>'s goal is to have interesting conversations.</p>
+            <!-- Brand Section & Integrated Dictionary Definition -->
+            <div class="brand-block">
+                <div class="title-line">
+                    <a href="#" class="brand-logo-text">untabulated</a>
+                    <span class="pipe-separator">|</span>
+                    <span class="subtitle-text">with Jordan Schoenfeld, Ohio State professor</span>
+                </div>
+                
+                <div class="dictionary-entry">
+                    <span class="dict-phonetic">/ˌənˈtabyəˌlādəd/</span>
+                    <span class="dict-pos">noun</span>
+                    <span class="dict-meaning">"conversations you want to hear."</span>
+                </div>
             </div>
         </header>
 
@@ -369,7 +415,7 @@
                 <article class="feed-item" data-type="video">
                     <div class="entry-meta">
                         <span class="entry-badge">
-                            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                             Video Essay
                         </span>
                         <span>Oct 14, 2026</span>
@@ -396,7 +442,7 @@
                 <article class="feed-item" data-type="article">
                     <div class="entry-meta">
                         <span class="entry-badge">
-                            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                            <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
                             Article
                         </span>
                         <span>Sep 28, 2026</span>
@@ -419,7 +465,7 @@
                 <article class="feed-item" data-type="video">
                     <div class="entry-meta">
                         <span class="entry-badge">
-                            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                             Video Essay
                         </span>
                         <span>Sep 12, 2026</span>
@@ -446,7 +492,7 @@
                 <article class="feed-item" data-type="article">
                     <div class="entry-meta">
                         <span class="entry-badge">
-                            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                            <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
                             Article
                         </span>
                         <span>Aug 30, 2026</span>
@@ -471,7 +517,7 @@
         <!-- Footer -->
         <footer>
             <div class="footer-left">
-                <p><strong>Untabulated</strong> &copy; 2026</p>
+                <p><strong>untabulated</strong> &copy; 2026</p>
             </div>
             <div>
                 <a href="#top" class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">↑ back to top</a>
@@ -479,7 +525,6 @@
         </footer>
     </div>
 
-    <!-- Interactive Script -->
     <script>
         function toggleModal(type) {
             if (type === 'about') {
